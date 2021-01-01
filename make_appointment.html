@@ -182,25 +182,39 @@
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 appointment_form">
               <div class="form_section">
-                <form class="form_contant" action="index.html">
+                <form id="gform" class="form_contant" method="POST" action="https://script.google.com/macros/s/AKfycbxRWzPNM2ZfbppjRjRAmB5myGvb_hHeNxDaaQBGtc1tpJVpcTiO/exec">
                   <fieldset class="row">
                   <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <input class="field_custom" placeholder="First Name*" type="text" required>
+                    <input class="field_custom" placeholder="Name*" name="Name*" type="text" required>
                   </div>
-                  <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <!-- <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <input class="field_custom" placeholder="Last Name" type="text" required>
+                  </div> -->
+                  <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <input class="field_custom" placeholder="Phone Number*" name="Phone Number*" type="text" required>
                   </div>
                   <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <input class="field_custom" placeholder="Your Email" type="email" required>
+                    <input class="field_custom" placeholder="Email*" name="Email*" type="email" required>
                   </div>
-                  <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <input class="field_custom" placeholder="Your Phone Number" type="text" required>
-                  </div>
-                  <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  
+                  <div style="display: flex; align-content: center; align-items: center; margin-top: 10px; margin-bottom: 10px;" class="field_custom field col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <label style="margin-left: 10px;">Choose a service types</label>
+                    <select style="margin-left: 30px;" name="Choose a service types" class="field_custom">
+                    <option value="Desktop">Desktop</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Network">Network</option>
+                    <option value="Other">Other</option>
+                  </select></div>
+
+                  <!-- <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <input class="field_custom" placeholder="Email" type="email" required>
+                  </div> -->
+                  
+                  <!-- <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <input class="field_custom" placeholder="Subject" type="text" required>
-                  </div>
+                  </div> -->
                   <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <textarea class="field_custom" placeholder="Description" required></textarea>
+                    <textarea class="field_custom" placeholder="Remarks about your complaint.*" name="Complaints" required></textarea>
                   </div>
                   <div class="center">
                     <button class="btn main_bt">SUBMIT NOW</button>
